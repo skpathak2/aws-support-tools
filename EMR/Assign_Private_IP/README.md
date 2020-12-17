@@ -4,6 +4,11 @@ This is a Python script that can be used as a bootstrap action or as an EMR step
 
 What does this script do:
 
-- takes the private IP address as its argument 
+- takes the private IP address and region  as its argument 
+```
+Using Bootstrap Action
+Script location:- s3://<My s3 bucket path>/assign_private_ip_region.py
+Optional arguments:-  172.31.45.13 us-east-1
+```
 - associate that IP to the eth0 interface of the master node
 - setup the necessary network configuration to ensure that all the traffic is redirected from the secondary to the primary IP address
